@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+<title>
+	AllSafe
+</title>	
+
+<head>
+	<link rel="shortcut icon" href="favicon.ico"/>
+</head>	
+
+<body style="padding:0; margin:0; overflow-y:scroll; overflow-x:hidden;">
+	
+	<div>
+		
+		<video playsinline autoplay muted loop id="bgvid">
+			<source src= "videoplayback.mp4" type="video/mp4">
+		</video>	
+	
+
+		<ul class="ul">
+			<li id='logo_AS' class="image" style="float:left; margin-top:5px; align:center; "><img src="sync.png" height="80" width="80"></li>			
+			<li class="logo" style="margin-top: 0.6em; margin-left:1vw; color:white; float:left;font-family: 'Slabo 27px', serif; font-size:40px; text-shadow:7px 10px 10px black;">AllSafe</li>
+
+			<li class="hamEdit" id="hamburger" style="height:1em; width:5em;"><img src="menu (2).png"/>
+				<div id="dropdown">
+					<a href="#home"  style="text-decoration:none;color:orange;"><img src="home.png"/></a>
+					<a href="#howto"  style="text-decoration:none;color:orange;"><img src="repair-tools.png"/></a>
+					<a href="#download" style="text-decoration:none;color:orange;"><img src="downloading-file.png"/></a>
+					<a href="#about" style="text-decoration:none; color:orange;"><img src="group-avatar.png"/></a>	
+				</div>
+			</li>
+			
+			<div id='nav'>
+
+			<a href="#about"><li id='nav' class="li">ABOUT US</li></a>
+			<a href="#download"><li id='nav' class="li">DOWNLOAD</li></a>
+			<a href="#howto"><li id='nav' class="li">HELP</li></a>
+			<a href="#home"><li id='nav' class="li">HOME</li></a>
+
+			</div>
+		</ul>		
+	</div>
+
+	
+	<div id="home" class="main">
+		<div style="padding-top: 19%; padding-left:60%;">
+			<button class="mainButtons" onclick="openLogin()">LOG IN</button>
+			<br/>
+			<br/>
+			<br/>
+			<button class="mainButtons">REGISTER</button>
+		</div>
+	</div>	
+	<div id="howto">
+		<div style="padding-top: 15%; padding-left:60%;">
+			<button class="mainButtons">FAQ's</button>
+			<br/>
+			<br/>
+			<br/>
+			<button class="mainButtons">HOW TO</button>
+			<br/>
+			<br/>
+			<br/>
+			<button class="mainButtons">BUG REPORT</button>
+		</div>
+	</div>
+	<div id="download">
+		<div class="downL">
+			<img src="sync.png" style="height: 7em; width: 7em;">
+			<p style="font-family: 'Slabo 27px', serif;;font-size:50px;color:white; margin-top:7px;">AllSafe</p>
+			<p style="font-family: 'Slabo 27px', serif;;font-size:35px;color:white; margin-top:-50px;">---- TAG LINE ----</p>
+			<button class="mainButtons"><img src="">DOWNLOAD</button>
+		</div>
+	</div>
+	<div id="about"></div>
+	
+</body>	
+
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</html>

@@ -1,0 +1,204 @@
+@font-face
+{
+
+font-family: "formal";
+src: url('Karamelia DEMO.otf');
+
+}
+
+@-webkit-keyframes spin 
+{
+
+0%  {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(360deg);}
+
+-webkit-transform-transform:rotate(45deg);
+
+}	
+
+@-webkit-keyframes fadein
+{
+/*from{font-size: 20px;}*/
+to{font-size: 30px;}
+}
+
+.image 
+{
+	-webkit-animation: spin 3s infinite linear;
+	border-radius: 100px 100px 100px 100px;
+	/*-webkit-transform:rotate(360deg);*/
+}
+
+#bgvid
+{
+	min-height: 100%;
+	min-width : 100%;
+	z-index: -100;
+	position: fixed;
+}
+
+.ul
+{
+	
+list-style-type: none;
+width: 100%;
+padding:0;
+/*margin-top: -10px;
+margin-left: -10px ;*/
+margin:0;
+border: 0;
+outline: 0;
+background: linear-gradient(#00004d,transparent);
+position: fixed; 
+ /*box-shadow: 0 4px 8px 0 orange, 0 6px 30px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.li
+{
+
+/*border-left: 1px groove white;*/
+font-family: 'Slabo 27px', serif;
+font-size: 27px;
+background: linear-gradient(transparent,transparent);
+padding:10px;
+float:right;
+width:13vw;
+color:white;
+text-align: center;
+line-height: 70px;
+text-shadow: 5px 10px 7px black;
+/*border-bottom: 5px inset green;
+*/
+
+
+}
+
+.li:hover
+{
+/*box-shadow: 0 4px 8px 0 #663300, 0 6px 30px 0 #663300;
+background-color: #663300;
+line-height: 90px;
+-webkit-animation: fadein 0.6s ;
+-webkit-animation-play-state:paused;*/
+
+/*transition-timing-function:ease-in;*/
+font-size: 30px;
+transition-duration: 0.2s;
+border-bottom: solid 1px white;
+background: linear-gradient(#000033,transparent)	
+}
+
+
+/*REDUCE DURATION OF ANIMATION TO VIEW !!*/
+
+.main
+{
+/*background-image:url("sample2.jpg");*/
+background-size: cover;
+cursor: url('cur1054.cur'),default;
+height: 100vh;
+width: 100vw;
+transition-duration:1s;
+}
+
+.mainButtons
+{
+	height: 3em;
+	width: 15em;
+	background:transparent; 
+	/*box-shadow: 0px 1px 80px 0px black;*/
+	z-index: 100;
+	border: white 5px solid;
+	outline: none;
+	font-family: 'Slabo 27px', serif;
+	font-size: 25px;
+	color: white;
+	border-radius: 75em;
+}
+
+.mainButtons:hover
+{
+		background-color: white;
+		box-shadow: 0px 10px 80px 0px #000033;	
+		color: #000033;
+		z-index: -50;
+}
+
+.mainButtons:active
+{
+	background: linear-gradient(transparent,transparent);
+	color: white;
+	box-shadow: none;
+	border: white 2px solid;
+}
+
+#dropdown
+{
+display: none;
+color: orange;
+
+
+}
+/*
+#hamburger:hover #dropdown
+{
+transition-duration:1s;
+display: block;
+color: orange;
+margin-right: 10px;
+*/		
+
+}
+
+.hamEdit
+{
+font-family: formal;
+font-size: 15px;
+background-color: transparent;
+padding:10px;
+float:right;
+width:10vw;
+color:white;
+text-align: center;
+line-height: 6em;
+text-shadow: -1px -1px 7px black;
+margin-right:10px;
+
+}
+
+#howto
+{
+/*background-image:url("sample5.jpg")*/;
+background-size: cover;
+cursor: url('cur1054.cur'),default;
+height: 100vh;
+width: 100vw;
+transition-duration:1s;
+}
+
+#download
+{
+/*background-image:url("sample4.jpg");*/
+background-size: cover;
+cursor: url('cur1054.cur'),default;
+height: 100vh;
+width: 100vw;
+transition-duration:1s;
+}
+
+.downL
+{
+	padding-left: 55%;
+	padding-top: 14%;
+	 
+} 
+
+#about
+{
+/*background-image:url("sample3.jpg");*/
+background-size: cover;
+cursor: url('cur1054.cur'),default;
+height: 100vh;
+width: 100vw;
+transition-duration:1s;
+}    	
