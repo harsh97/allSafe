@@ -5,17 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
-<?php
-$servername = "localhost";
-$username = "admin";
-$password = "admin";
-$conn = new mysqli($servername, $username, $password);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$conn->close();
-?>
 <title>
 	AllSafe Login
 </title>
@@ -30,7 +20,7 @@ $conn->close();
 			<source src= "videoplayback.mp4" type="video/mp4">
 	</video>
 
-	<form id="formLog" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+	<form id="formLog" action="verify.php" method="POST">
 		<img src="sync.png" id="logoLog"></img>
 		<p id="textLog">LOGIN</p>
 		<br/>
@@ -39,11 +29,13 @@ $conn->close();
 		<br/>
 		<br/>
 		<!--<i class="material-icons">perm_identity</i>-->
-		<input type="text" class="inputLog" placeholder="Enter Your Username" required></input>
+		<input type="text" class="inputLog" placeholder="Enter Your Username"
+    name="username" required></input>
 		<br/>
 		<br/>
 		<!--<i class="material-icons">vpn_key</i>-->
-		<input type="password" class="inputLog" placeholder="Password" required></input>
+		<input type="password" class="inputLog" placeholder="Password"
+    name="password" required></input>
 		<br/>
 		<br/>
 		<input type="checkbox"><span style="color:white; font-style:italic;">Keep Me Logged In</span></input>
