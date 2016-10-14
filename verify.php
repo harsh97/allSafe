@@ -28,7 +28,7 @@ if($result->num_rows > 0)
   $row=$result->fetch_assoc();
   if($row["password"]==$_POST["password"])
   {
-    echo "\n LOGGED IN BITCH";
+    echo "\n LOGGED IN ";
   }
 }
 

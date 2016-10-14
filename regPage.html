@@ -8,11 +8,11 @@
 
 <title>
 	AllSafe Register
-</title>	
+</title>
 
 <head>
 	<link rel="shortcut icon" href="favicon.ico" />
-</head>	
+</head>
 
 <body>
 
@@ -20,33 +20,33 @@
 			<source src= "videoplayback.mp4" type="video/mp4">
 	</video>
 
-	<form id="formLog">
+	<form id="formLog" action="register.php" method="POST">
 		<img src="sync.png" id="logoLog"></img>
 		<p id="textLog">REGISTER</p>
 		<img src="def.png" id="profPhoto"></img>
 		<br/>
 		<br/>
-		<input type ="text" class="inputLog" placeholder="First Name">
+		<input type ="text" name="username" class="inputLog" placeholder="First Name" required="">
 		<br/>
 		<br/>
-		<input type ="text" class="inputLog" placeholder="Last Name">
+		<input type ="text" class="inputLog" name="lastname" placeholder="Last Name">
 		<br/>
 		<br/>
 		<!--<i class="material-icons">perm_identity</i>-->
-		<input type="text" class="inputLog" placeholder="Email"></input>
+		<input type="text" class="inputLog" name="email" placeholder="Email" required></input>
 		<br/>
 		<br/>
 		<!--<i class="material-icons">vpn_key</i>-->
-		<input type="password" class="inputLog" placeholder="Password"></input>
+		<input type="password" class="inputLog" placeholder="Password" name="password" required></input>
 		<br/>
 		<br/>
 		<input type="checkbox"><span style="color:white; font-style:italic;">I Agree to AllSafe Terms</span></input>
 		<button id="butLog">Register</button>
 		<br/>
 		<br/>
-		<!--<pre style="color:white; cursor:pointer";>Still scared of losing your data? 
+		<!--<pre style="color:white; cursor:pointer";>Still scared of losing your data?
 		<span style="font-size:18px; font-weight:bold;">Register Now<span></pre>-->
-	</form>	
-</body>	
+	</form>
+</body>
 
 </html>

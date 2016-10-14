@@ -43,7 +43,7 @@
 		<br/>
 		<br/>
 		<pre style="color:white; cursor:pointer";>Still scared of losing your data?
-		<span style="font-size:18px; font-weight:bold;">Register Now<span></pre>
+		<a href="regPage.html" style="text-decoration:none;color:white"><span style="font-size:18px; font-weight:bold;">Register Now<span></pre></a>
 	</form>
 </body>
 
